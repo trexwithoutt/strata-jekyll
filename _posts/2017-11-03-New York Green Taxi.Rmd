@@ -1,6 +1,7 @@
 ---
-title: "CODE CHALLENGE"
+title: "2017-11-03-New York Green Taxi"
 author: "REX(RUIZHE) ZHOU"
+category: project
 date: "11/3/2017"
 output: 
   html_document: 
