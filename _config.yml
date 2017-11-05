@@ -1,6 +1,7 @@
 title: Strata by HTML5 UP
 description: >
-  **I am Rex, a professional in chilling with myself**.
+  **I am Rex**
+  *A professional in chilling with myself*
 copyright: Untitled
 sass:
   sass_dir: assets/sass
@@ -8,7 +9,7 @@ url: http://localhost:4000
 disqus_shortname: stratajekylldemo
 facebook_username:
 twitter_username: "#"
-linkedin_username: "#"
+linkedin_username: "rex-zhou-4bb38a148"
 instagram_username: "trexwithoutt"
 pinterest_username:
 flickr_username:
