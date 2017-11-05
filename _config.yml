@@ -1,21 +1,19 @@
-title: Strata by HTML5 UP
+title: 土
 description: >
   **I am Rex**
   *A professional in chilling with myself*
-copyright: Untitled
+copyright: trexwithoutt
 sass:
   sass_dir: assets/sass
 url: http://localhost:4000
-disqus_shortname: stratajekylldemo
-facebook_username:
-twitter_username: "#"
+disqus_shortname: 
+facebook_username: "rex.zhou.50"
 linkedin_username: "rex-zhou-4bb38a148"
 instagram_username: "trexwithoutt"
-pinterest_username:
-flickr_username:
-github_username:  "#"
+pinterest_username: "rex0138"
+github_username:  "trexwithoutt"
 feed_icon: rss
-email: "#"
+email: "rexzhe1230@gmail.com"
 gems: [jekyll-paginate]
 paginate_path: "/page/:num/"
 paginate: 5
