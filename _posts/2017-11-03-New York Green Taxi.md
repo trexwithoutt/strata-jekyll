@@ -7,7 +7,7 @@ date: "11/3/2017"
 
 This is a self project data analyzing on new york green taxi based on tips and trips etc. creteria. The data can be found at [*NYC Government Website*](http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml). 
 
-## Required Packages
+
 ```r
 library(RCurl)
 library(ggplot2)
@@ -51,7 +51,7 @@ ggplot(data = y, aes(y$Trip_distance)) +
 out_num = sum(y$Trip_distance > 10)
 extreme = max(y$Trip_distance)
 ```
-![](https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master/images/Tripdistance1.png)
+![](https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master/images/Tripdistance1.png){:class="img-responsive"}
 
 
 - The range of the trip distance is widely spreaded. When we look in details, the maximum of this variable reaches `r extreme`, and there is a high expression between 0 to 10
@@ -70,7 +70,7 @@ y %>%
   labs(x="Trip Distance", y="Count")
   
 ```
-![](https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master/images/tripdistance2.png)
+![](https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master/images/tripdistance2.png){:class="img-responsive"}
 
 - According to the second histogram above, the `Trip_distance` variable contain values that highly skewed to right, and it can easily observe that the median is smaller than the mean. 
 
@@ -192,7 +192,7 @@ ggplot(df_airport, aes(Var1, Freq, colour=airport)) +
   theme_bw()
 ```
 
-![](https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master/images/airpotvstime.png)
+![](https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master/images/airpotvstime.png){:class="img-responsive"}
 
 - Based on the graph above, the volume of going to lga is much larger than that of jfk and newark. But we still can get an intuitive notice that people usually going to airports from the morning 3AM to the night 23PM, and all three have a peak around 4-5PM. We, thus, can derive some information such that flights operate more during the evening, and usually start to operate the earliest one at aroung 4-6AM.
 
@@ -217,7 +217,7 @@ ggplot(df_air_distance, aes(hour_dropoff, Trip_distance, colour=airport)) +
   theme_bw()
 ```
 
-![](https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master/images/airdisvstime.png)
+![](https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master/images/airdisvstime.png){:class="img-responsive"}
 
 
 - Based on the graph above, the travling mean traveling distances for JFK and Newark are much more longer than the mean distance for LGA. This can be easily explain, since that LGA is locate in the major area of newyork, where nearby the manhattan and queens, two districts that contain most of population in new york, and JFK (locate at Brooklyn), Newark (locate at Jersey) much further from main districts of new york than LGA does.
@@ -269,9 +269,9 @@ trans = lm(log(Tip_amount) ~., data = y3)
 plot(trans, pch=20, cex=0.3, col='dodgerblue')
 ```
 
-![Model Test Before Transformation](https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master/images/firsttest.png)
+![Model Test Before Transformation](https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master/images/firsttest.png){:class="img-responsive"}
 
-![Model Test After Transformation](https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master/images/secondtest.png)
+![Model Test After Transformation](https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master/images/secondtest.png){:class="img-responsive"}
 
 Even though all non-factor variables are significant in regression model, it seems like it still handle a good result after cleaning and transformation.
  
