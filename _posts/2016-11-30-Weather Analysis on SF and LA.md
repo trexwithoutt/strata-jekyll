@@ -2,7 +2,7 @@
 title: "Mama's Sunshine and Daddy's Rain"
 author: "REX(RUIZHE) ZHOU"
 categories: project
-date: "11/30/2016"
+date: "11/10/2016"
 ---
 
 This project is an reproduce and extended work on [Edward Tufte](https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=00014g)'s plot (mainly using SF and LA weather data).
