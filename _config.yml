@@ -12,7 +12,7 @@ linkedin_username: "rex-zhou-4bb38a148"
 instagram_username: "trexwithoutt"
 pinterest_username: "rex0138"
 github_username:  "trexwithoutt"
-feed_icon: rss
+feed_icon: "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master/images/Rex-Zhou-Resume.pdf"
 email: "rexzhe1230@gmail.com"
 gems: [jekyll-paginate]
 paginate_path: "/page/:num/"
