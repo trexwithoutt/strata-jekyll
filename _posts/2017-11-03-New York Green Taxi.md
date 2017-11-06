@@ -5,10 +5,8 @@ categories: project
 date: "11/3/2017"
 ---
 
-# Fundamental Analysis
-
-##### Required Packages
-```{r message=FALSE, warning=FALSE, paged.print=FALSE}
+## Required Packages
+```r
 library(RCurl)
 library(ggplot2)
 library(tidyverse)
@@ -23,7 +21,7 @@ library(lmtest)
 
 ## Load Data
 
-```{r message=FALSE, warning=FALSE, paged.print=FALSE}
+```r
 x = getURL('https://s3.amazonaws.com/nyc-tlc/trip+data/green_tripdata_2015-09.csv')
 y = read.csv(text = x)
 y = y[y$Fare_amount > 0, ]
@@ -36,7 +34,7 @@ cols = dim(y)[2]
 
 ## Visual On Vriable `Trip Distance`
 
-```{r}
+```r
 ggplot(data = y, aes(y$Trip_distance)) +
   geom_histogram(
     breaks = seq(0, 600, by = 2),
@@ -56,7 +54,7 @@ extreme = max(y$Trip_distance)
 
 - To take a closer look of the trip distance data, we need to concatenate extreme values (which, here, I chose values above 10) and have a direct visual on major distributed data
 
-```{r message=FALSE, warning=FALSE, paged.print=FALSE}
+```r
 ## Histogram For the Trip Distance Variable
 y %>%
   mutate(Trip_Distance = ifelse(y$Trip_distance > 10, 11, y$Trip_distance)) %>%
@@ -82,7 +80,7 @@ y %>%
 
 To take a look at relation between trip distance and time, we can first group the distance value by time
 
-```{r message=FALSE, warning=FALSE, paged.print=FALSE}
+```r
 ## Create columns of pick and dropoff hour, value contain factors with 24 levels
 y$hour_pickup = as.factor(substr(y$lpep_pickup_datetime, 12, 13))
 y$hour_dropoff = as.factor(substr(y$Lpep_dropoff_datetime, 12, 13))
@@ -125,7 +123,7 @@ ggplot(df, aes(hour, Trip_distance, colour=source)) +
 There are three airports locate at new york city area, JFK, LGA, and Newark. According to the
 [data dictionary] (http://www.nyc.gov/html/tlc/downloads/pdf/data_dictionary_trip_records_green.pdf), we can determine if a trip was going to JFK and Newark by idenify the RateCodeID, where `2` is JFK and `3` is Newark. To find out trips that were going to LGA, I decided to figure out the location of the destination, since the dropoff longitude and latitude are given. We can easily find the boundary of longitude and latitude of LGA by going to this [website](http://www.get-direction.com/address-to-lat-long.html?place=laguardia%20airport%20entrance%2C%20east%20elmhurst%2C%20ny%2C%20united%20states)
 
-```{r message=FALSE, warning=FALSE, paged.print=FALSE}
+```r
 ### JFK
 jfk = y[y$RateCodeID == 2,]
 mean_total_jfk = mean(jfk$Total_amount)
@@ -170,7 +168,7 @@ mean_fare_airport = mean(airport$Fare_amount)
 To look more details about the airport trip, I decided to find out the trip relation with trip distance and time.
 
 *(Airport Trips with Time)*
-```{r}
+```r
 jfk_count = as.data.frame(table(jfk$hour_dropoff))
 newark_count = as.data.frame(table(newark$hour_dropoff))
 lga_count = as.data.frame(table(lga$hour_dropoff))
@@ -191,7 +189,7 @@ ggplot(df_airport, aes(Var1, Freq, colour=airport)) +
 
 *(Airport Trips with Time)*
 
-```{r}
+```r
 mean_dropoff_jfk = aggregate(Trip_distance ~ hour_dropoff, jfk, mean)
 mean_dropoff_newark = aggregate(Trip_distance ~ hour_dropoff, newark, mean)
 mean_dropoff_lga = aggregate(Trip_distance ~ hour_dropoff, lga, mean)
@@ -217,13 +215,13 @@ ggplot(df_air_distance, aes(hour_dropoff, Trip_distance, colour=airport)) +
 
 First we create a derived variable tip ratio.
 
-```{r}
+```r
 y$Tip_percentage = paste(round((y$Tip_amount / y$Total_amount) * 100, digits =
                             2), "%", sep = '')
 y$Tip_ratio = y$Tip_amount / y$Total_amount
 ```
 
-```{r}
+```r
 ## Create a new dataframe that contain no factor variables. Thus we can try if there is a regression predictive model
 
 nofactor = data.frame(RateCodeID = y$RateCodeID, Passenger_count = y$Passenger_count, Trip_distance = y$Trip_distance, Fare_amount =y$Fare_amount, Tip_amount = y$Tip_amount, Total_amoungt = y$Total_amount, Tip_ratio = y$Tip_ratio)
