@@ -1,15 +1,6 @@
 title: 土
-description: >+
-  **I am Rex.** 
-  
-  
-  *A professional in chilling with myself* 
-  
-  
-  as well as 
-  
-  
-  *A numb analyst with styles*
+description: >
+  **I am Rex.**_*A professional in chilling with myself*_as well as_*A numb analyst with styles*
 copyright: trexwithoutt
 sass:
   sass_dir: assets/sass
