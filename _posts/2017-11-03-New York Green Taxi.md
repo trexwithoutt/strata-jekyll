@@ -120,7 +120,7 @@ ggplot(df, aes(hour, Trip_distance, colour=source)) +
   theme_bw()
 ```
 
-![]({{ "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master/images/Vs.Hours.png" | absolute_url }})
+![]({{ "/images/Vs.Hours.png" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
 
 - According to the plot above, it seems the peak of the mean of trip distance usually happens during the morning, like 6 to 9, and there is a pop up after 8PM. If the cause of taking taxi is related to going to work, I may assume that people ususally take taxi to avoid being late and don't really want to spend to much on taxi after work. The pop back after 8PM might infers that people want to get back home quickly after their night life, and the high volume of ending night life usually after 10 or 11PM.
 
