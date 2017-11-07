@@ -217,7 +217,7 @@ finalPlot(temp = laxWeather, precip = laxMonthlyPrecip)
 
 ```
 
-[![]({{ "/images/rz_weatherplot_reproduce-1.png" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})]({{ "/images/rz_weatherplot_reproduce-1.png" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
+[![]({{ "/images/rz_weatherplot_reproduce-1.png" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})]({{ "/images/rz_weatherplot_reproduce-1.jpg" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
 
 
 The data used in this project is gathered from Berkely (I supposed.). Dataset includes both weather and precipitation information researched from LA and SF.
@@ -373,7 +373,7 @@ finalPlot_c = function(ltemp, lpre, stemp, spre){
 finalPlot_c(ltemp = laxWeather, lpre = laxMonthlyPrecip, stemp = sfoWeather,spre = sfoMonthlyPrecip)
 ```
 
-![]({{ "/images/rz_weather_compare-1.png" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
+[![]({{ "/images/rz_weather_compare-1.png" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})]({{ "/images/rz_weather_compare-1.jpg" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
 
 
 The [dataset](https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master/data/weather2015_LA.csv) for 2015 weather is created by myself. The instruction for this project giving a URL link to data source of 2011 in LA.
@@ -497,4 +497,4 @@ finalPlot_2015 = function(temp, precip){
 
 finalPlot_2015(temp = LA2015, precip = LA2015precip)
 ```
-![]({{ "/images/rz_LA2015-1.png" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
+[![]({{ "/images/rz_LA2015-1.png" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})]({{ "/images/rz_LA2015-1 2.jpg" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
