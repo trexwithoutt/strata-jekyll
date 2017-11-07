@@ -52,7 +52,7 @@ out_num = sum(y$Trip_distance > 10)
 extreme = max(y$Trip_distance)
 ```
 
-![]({{ "/images/Tripdistance1.png" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
+[![]({{ "/images/Tripdistance1.png" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})](https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master/images/Tripdistance1.png)
 
 - The range of the trip distance is widely spreaded. When we look in details, the maximum of this variable reaches `r extreme`, and there is a high expression between 0 to 10
 
