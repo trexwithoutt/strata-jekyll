@@ -217,7 +217,7 @@ finalPlot(temp = laxWeather, precip = laxMonthlyPrecip)
 
 ```
 
-![]({{ "/images/rz_weatherplot_reproduce-1.png" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
+[![]({{ "/images/rz_weatherplot_reproduce-1.png" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})]({{ "/images/rz_weatherplot_reproduce-1.png" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
 
 
 The data used in this project is gathered from Berkely (I supposed.). Dataset includes both weather and precipitation information researched from LA and SF.
