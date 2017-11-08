@@ -9,7 +9,7 @@ description: |
   
   **A numb analyst with styles**
   
-#copyright: trexwithoutt
+copyright: trexwithoutt
 sass:
   sass_dir: assets/sass
 url: http://localhost:4000
