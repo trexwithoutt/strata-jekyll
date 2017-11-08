@@ -5,11 +5,11 @@ categories: project
 date: "11/3/2017"
 ---
 
-# Introduction
+**Introduction**
 
 This is a self project data analyzing on new york green taxi based on tips and trips etc. creteria. The data can be found at [*NYC Government Website*](http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml). 
 
-# Requirement
+**Requirement**
 
 - `R 3.6`
 - `Shiny`
@@ -40,7 +40,7 @@ cols = dim(y)[2]
 
 - Based on the overview above, we can easily see that there are `r rows` observation and `r cols` variables
 
-## Visual On Vriable `Trip Distance`
+** Visual On Vriable `Trip Distance`**
 
 ```r
 ggplot(data = y, aes(y$Trip_distance)) +
@@ -88,7 +88,7 @@ y %>%
 - The observation on `Trip_distance` data leads me to a **hypothesis**: Since the data doesn't form in a normal distribution, we may consider that people in new york doesn't take a trip is not random, and, there might be a cause result in trip distance mainly locates between range 0 to 10. (eg. trip time: since people usually work daily)
 
 
-## `Trip_Distance` vs. Time
+** `Trip_Distance` vs. Time**
 
 To take a look at relation between trip distance and time, we can first group the distance value by time
 
@@ -132,7 +132,7 @@ ggplot(df, aes(hour, Trip_distance, colour=source)) +
 - According to the plot above, it seems the peak of the mean of trip distance usually happens during the morning, like 6 to 9, and there is a pop up after 8PM. If the cause of taking taxi is related to going to work, I may assume that people ususally take taxi to avoid being late and don't really want to spend to much on taxi after work. The pop back after 8PM might infers that people want to get back home quickly after their night life, and the high volume of ending night life usually after 10 or 11PM.
 
 
-## Trip vs. Airports
+**Trip vs. Airports**
 
 There are three airports locate at new york city area, JFK, LGA, and Newark. According to the
 [data dictionary] (http://www.nyc.gov/html/tlc/downloads/pdf/data_dictionary_trip_records_green.pdf), we can determine if a trip was going to JFK and Newark by idenify the RateCodeID, where `2` is JFK and `3` is Newark. To find out trips that were going to LGA, I decided to figure out the location of the destination, since the dropoff longitude and latitude are given. We can easily find the boundary of longitude and latitude of LGA by going to this [website](http://www.get-direction.com/address-to-lat-long.html?place=laguardia%20airport%20entrance%2C%20east%20elmhurst%2C%20ny%2C%20united%20states)
@@ -229,8 +229,7 @@ ggplot(df_air_distance, aes(hour_dropoff, Trip_distance, colour=airport)) +
 
 - Based on the graph above, the travling mean traveling distances for JFK and Newark are much more longer than the mean distance for LGA. This can be easily explain, since that LGA is locate in the major area of newyork, where nearby the manhattan and queens, two districts that contain most of population in new york, and JFK (locate at Brooklyn), Newark (locate at Jersey) much further from main districts of new york than LGA does.
 
-
-## Tip Analysis
+** Tip Analysis**
 
 First we create a derived variable tip ratio.
 
