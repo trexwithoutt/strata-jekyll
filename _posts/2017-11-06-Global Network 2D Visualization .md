@@ -15,6 +15,12 @@ This project is basic using of `save_map` function to create network and display
 - package `mapmate`
 - package `animation`
 
+# Output
+
+[![]({{ "/images/network2d1.gif" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})]({{ "/images/network2d.gif" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
+
+
+# Programming
 
 ```r
 library(mapmate)
@@ -63,5 +69,3 @@ library(animation)
 saveGIF(for (i in seq_along(gglist)) print(gglist[[i]]), "network2D.gif", interval = 1/20, 
     ani.width = 600, ani.height = 300)
 ```
-
-[![]({{ "/images/network2d1.gif" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})]({{ "/images/network2d.gif" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
