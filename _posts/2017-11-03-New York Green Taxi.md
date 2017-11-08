@@ -5,8 +5,14 @@ categories: project
 date: "11/3/2017"
 ---
 
+# Introduction
+
 This is a self project data analyzing on new york green taxi based on tips and trips etc. creteria. The data can be found at [*NYC Government Website*](http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml). 
 
+# Requirement
+
+- `R 3.6`
+- `Shiny`
 
 ```r
 library(RCurl)
