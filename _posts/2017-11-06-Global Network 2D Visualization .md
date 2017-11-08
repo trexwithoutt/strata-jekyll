@@ -4,8 +4,16 @@ author: "REX(RUIZHE) ZHOU"
 categories: project
 ---
 
-I found an intresting visualization project recently, the whole idea is created by [Matt Leonawicz](https://github.com/leonawicz/mapmate)
+# Introduction
 
+I found an intresting visualization project recently, the whole idea is created by [Matt Leonawicz](https://github.com/leonawicz/mapmate)
+This project is basic using of `save_map` function to create network and display the path way
+
+# Requirement
+
+- `R 3.6`
+- package `mapmate`
+- package `animation`
 
 
 ```r
