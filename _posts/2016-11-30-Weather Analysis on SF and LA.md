@@ -5,11 +5,23 @@ categories: project
 date: "11/10/2016"
 ---
 
+# Description
+
 This project is an reproduce and extended work on [Edward Tufte](https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=00014g)'s plot (mainly using SF and LA weather data).
 In his example, the data set is taken from annual review of the weather by The New York Times. The graph shows daily high and low temperatures for 2003, 
 for a normal year, and for record days, along with cumulative monthly precipitation. Some interesting inferences about average, variation, 
 and rates of change over the seasons can be made visually. Note the flat part of the cycle through mid-December to mid-February and 
 then a fairly rapid rise in temperature mid-February to May. And so on.
+
+# Requirement
+
+- `R 3.6`
+
+# Output
+
+[![]({{ "/images/rz_weatherplot_reproduce-1.png" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})]({{ "/images/rz_weatherplot_reproduce-1.jpg" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
+
+
 
 **Reproduce Tufte plot on San Francisco Weather Data**
 (*[Data Source](https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master/data/weather2011.rda)*)
