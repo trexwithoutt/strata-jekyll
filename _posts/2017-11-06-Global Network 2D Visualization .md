@@ -4,23 +4,23 @@ author: "REX(RUIZHE) ZHOU"
 categories: project
 ---
 
-# Introduction
+**Introduction**
 
 I found an intresting visualization project recently, the whole idea is created by [Matt Leonawicz](https://github.com/leonawicz/mapmate)
 This project is basic using of `save_map` function to create network and display the path way
 
-# Requirement
+**Requirement**
 
 - `R 3.6`
 - package `mapmate`
 - package `animation`
 
-# Output
+**Output**
 
 [![]({{ "/images/network2d1.gif" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})]({{ "/images/network2d.gif" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
 
 
-# Programming
+**Programming**
 
 ```r
 library(mapmate)
