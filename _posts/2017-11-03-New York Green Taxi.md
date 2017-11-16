@@ -57,8 +57,7 @@ ggplot(data = y, aes(y$Trip_distance)) +
 out_num = sum(y$Trip_distance > 10)
 extreme = max(y$Trip_distance)
 ```
-
-[![]({{ "/images/Tripdistance1.png" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})](https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master/images/Tripdistance1.png)
+[<img src="/images/Tripdistance1.png" class="fit image"> ](https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master/images/Tripdistance1.png)
 
 - The range of the trip distance is widely spreaded. When we look in details, the maximum of this variable reaches `r extreme`, and there is a high expression between 0 to 10
 
@@ -77,7 +76,7 @@ y %>%
   
 ```
 
-![]({{ "/images/tripdistance2.png" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
+[<img src="/images/tripdistance2.png" class="fit image"> ]({{ "/images/tripdistance2.png" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
 
 - According to the second histogram above, the `Trip_distance` variable contain values that highly skewed to right, and it can easily observe that the median is smaller than the mean. 
 
@@ -127,7 +126,7 @@ ggplot(df, aes(hour, Trip_distance, colour=source)) +
   theme_bw()
 ```
 
-![]({{ "/images/Vs.Hours.png" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
+[<img src="/images/Vs.Hours.png" class="fit image"> ]({{ "/images/Vs.Hours.png" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
 
 - According to the plot above, it seems the peak of the mean of trip distance usually happens during the morning, like 6 to 9, and there is a pop up after 8PM. If the cause of taking taxi is related to going to work, I may assume that people ususally take taxi to avoid being late and don't really want to spend to much on taxi after work. The pop back after 8PM might infers that people want to get back home quickly after their night life, and the high volume of ending night life usually after 10 or 11PM.
 
@@ -199,7 +198,7 @@ ggplot(df_airport, aes(Var1, Freq, colour=airport)) +
   theme_bw()
 ```
 
-![]({{ "/images/airpotvstime.png" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
+[<img src="/images/airpotvstime.png" class="fit image"> ]({{ "/images/airpotvstime.png" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
 
 - Based on the graph above, the volume of going to lga is much larger than that of jfk and newark. But we still can get an intuitive notice that people usually going to airports from the morning 3AM to the night 23PM, and all three have a peak around 4-5PM. We, thus, can derive some information such that flights operate more during the evening, and usually start to operate the earliest one at aroung 4-6AM.
 
@@ -224,7 +223,7 @@ ggplot(df_air_distance, aes(hour_dropoff, Trip_distance, colour=airport)) +
   theme_bw()
 ```
 
-![]({{ "/images/airdisvstime.png" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
+[<img src="/images/airdisvstime.png" class="fit image"> ]({{ "/images/airdisvstime.png" | "https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
 
 
 - Based on the graph above, the travling mean traveling distances for JFK and Newark are much more longer than the mean distance for LGA. This can be easily explain, since that LGA is locate in the major area of newyork, where nearby the manhattan and queens, two districts that contain most of population in new york, and JFK (locate at Brooklyn), Newark (locate at Jersey) much further from main districts of new york than LGA does.
@@ -275,10 +274,10 @@ trans = lm(log(Tip_amount) ~., data = y3)
 plot(trans, pch=20, cex=0.3, col='dodgerblue')
 ```
 
-![Model Test Before Transformation]({{"/images/firsttest.png"|"https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
+[<img src="/images/firsttest.png" class="fit image"> ]({{"/images/firsttest.png"|"https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
 
 
-![Model Test After Transformation]({{"/images/secondtest.png"|"https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
+[<img src="/images/secondtest.png" class="fit image"> ]({{"/images/secondtest.png"|"https://github.com/trexwithoutt/trexwithoutt.github.io/blob/master" }})
 
 
 Even though all non-factor variables are significant in regression model, it seems like it still handle a good result after cleaning and transformation.
