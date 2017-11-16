@@ -11,6 +11,10 @@ This is a self project data analyzing on new york green taxi based on tips and t
 
 **Requirement**
 
+$$
+e^x
+$$
+
 - `R 3.6`
 - `Shiny`
 
